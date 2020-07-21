@@ -6,7 +6,7 @@ object Minpathcalulation extends App {
     val input = Utils.readFile("inputdata.txt").get
     
     // println(Utils.inputToInt(input))
-    def sum(triangle: List[List[Int]]) = {
+    def sum(triangle: List[List[Int]]): Int = {
         triangle.reduceRight((upper, lower) =>
             upper zip (lower zip lower.tail)
             map {case (up, (left, right)) => up + Math.min(left, right)}
