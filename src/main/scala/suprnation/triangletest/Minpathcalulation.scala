@@ -3,7 +3,8 @@ package suprnation.triangletest
 import suprnation.triangletest.Utils._
 
 object Minpathcalulation extends App {
-    val input = Utils.readFile("inputdata.txt").get
+    val fileName = "inputdata.txt"
+    val input = Utils.readFile(fileName).get
     
     // println(Utils.inputToInt(input))
     def sum(triangle: List[List[Int]]): Int = {
@@ -13,6 +14,6 @@ object Minpathcalulation extends App {
         ).head
     }
     println("Triangle is: ")
-    Utils.readFile("inputdata.txt").get.foreach(x => println(x))
+    Utils.readFile(fileName).get.foreach(x => println(x))
     println("Minimal path is: " + sum(Utils.inputToInt(input)))
 }

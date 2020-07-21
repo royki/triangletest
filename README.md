@@ -1,7 +1,9 @@
 # Minimum/Maximum Triangle Paths
 
 - Environment
-  - Scala, Sbt
+  - Scala: `2.13.3`
+  - Sbt: `1.3.13`
 - Run
-  - sbt run
-  - sbt test
+  - `sbt run`
+- Test
+  - `sbt test`
