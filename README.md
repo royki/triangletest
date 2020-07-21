@@ -7,3 +7,7 @@
   - `sbt run`
 - Test
   - `sbt test`
+
+- To be continued
+  - Using Libs like Akka Actor
+  - Refactor code
