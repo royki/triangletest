@@ -16,5 +16,6 @@ object Minpathcalulation extends App {
     }
     println("Triangle is: ")
     Utils.readFile(fileName).get.foreach(x => println(x))
+    println()
     println("Minimal path is: " + minimalPath(Utils.inputToInt(input)))
 }

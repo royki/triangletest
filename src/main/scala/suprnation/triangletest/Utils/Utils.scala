@@ -20,8 +20,8 @@ object Utils {
   }
 
   def inputToInt(i: List[String]): List[List[Int]] = {
-      i.filterNot((x => x.isEmpty())).map {
-          y => y.split(" ").toList.map(z => z.toInt)
-      }
+    i.filterNot((x => x.isEmpty())).map {
+        y => y.split(" ").toList.map(z => z.toInt)
+    }
   }
 }
